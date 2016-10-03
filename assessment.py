@@ -112,23 +112,22 @@ def hometown_greeting(hometown, first_name, last_name):
 #    defaults to 1. The inner function should take ``y`` and add ``x`` and ``y`` together.
 
 def increment(x = 1):
-    """
-    """
 
-    add(x)
+    y = x
 
     def add(y):
-        """
-        """
+
         return x + y
 
+    add(x)
 
 
 # 2. Call the function ``increment()`` with x = 5. Assign what is returned to a variable name, addfive. Call 
 #    addfive with y = 5. Call again with y = 20.
 
 addfive = increment(5)
-
+addfive = increment(5)
+addfive = increment(20)
 
 
 # 3. Make a function that takes in a number and a list of numbers. It should append
